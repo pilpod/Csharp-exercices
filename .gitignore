@@ -1,0 +1,5 @@
+.exercism
+.vscode
+bin
+obj
+.editorconfig
