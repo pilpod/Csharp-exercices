@@ -24,11 +24,6 @@ public static class SumOfMultiples
                 count++;
             }
         }
-        
-        for (int i = 0; i < numbList.Count; i++)
-        {
-            Console.WriteLine(numbList[i]);
-        }
 
         int result = numbList.Sum();
 
