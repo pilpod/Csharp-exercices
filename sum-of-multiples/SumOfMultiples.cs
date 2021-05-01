@@ -11,10 +11,14 @@ public static class SumOfMultiples
 
         foreach (var item in multiples)
         {
-            count = 1;
+            count = 0;
             for (int i = 0; i < max; i++)
             {
-                if(count % item == 0 && !numbList.Contains(count) && count < max) {
+                if(item == 0) {
+                    numbList.Add(0);
+                }
+
+                if(item != 0 && count % item == 0 && !numbList.Contains(count) && count < max) {
                     numbList.Add(count);
                 }
                 count++;
